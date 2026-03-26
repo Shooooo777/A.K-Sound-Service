@@ -1,0 +1,365 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#f5f5f5;
+}
+/* Header Container */
+.main-header{
+  background:#2f2f2f;
+  padding:16px 18px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  box-shadow:0 6px 14px rgba(0,0,0,0.25);
+  max-width:100%;
+}
+
+/* Left Side */
+.header-left{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+}
+
+/* Profile Image */
+.profile-img{
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid #ff2d6f;
+}
+
+/* Text Area */
+.header-text h1{
+  margin:0;
+  font-size:22px;
+  color:#ff2d6f;
+  font-weight:700;
+}
+
+.director{
+  margin:4px 0;
+  font-size:14px;
+  color:#e0e0e0;
+}
+
+.director span{
+  color:#bdbdbd;
+  font-size:13px;
+}
+
+.address{
+  margin:0;
+  font-size:13px;
+  color:#cfcfcf;
+  line-height:1.4;
+}
+
+/* Book Now Button */
+.book-btn{
+  background:linear-gradient(90deg,#ff2d2d,#ff9800);
+  border:none;
+  color:#000;
+  font-weight:600;
+  padding:10px 18px;
+  border-radius:22px;
+  font-size:15px;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+.book-btn:active{
+  transform:scale(0.96);
+}
+
+/* Mobile Responsive */
+@media(max-width:600px){
+  .main-header{
+    padding:14px;
+  }
+
+  .profile-img{
+    width:60px;
+    height:60px;
+  }
+
+  .header-text h1{
+    font-size:20px;
+  }
+
+  .book-btn{
+    font-size:14px;
+    padding:8px 14px;
+  }
+}
+
+.card {
+  background-image: url("card.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  height:250px;
+   color:white;
+  margin:15px;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+/* ================= SECTION ================= */
+
+.section{
+  background:white;
+  color:black;
+  margin:15px;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.section h2{
+  margin-bottom:10px;
+}
+
+
+.section1{
+  background:white;
+  
+  margin:15px;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.section1 h2{
+  margin-bottom:10px;
+}
+
+/* ================= SERVICES ================= */
+
+.section ul{
+  list-style:none;
+}
+
+.section ul li{
+  margin:6px 0;
+  font-size:15px;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  background-color: #fff;
+}
+
+.gallery img{
+  width:80%;
+  height: 80%;
+  border-radius:10px;
+  background-color: #fff;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn{
+  display:block;
+  padding:12px;
+  margin-top:10px;
+  border-radius:25px;
+  text-align:center;
+  color:white;
+  text-decoration:none;
+  font-size:15px;
+}
+
+.call{background:orange;}
+.whatsapp{background:#25D366;}
+.direction{background:green;}
+
+/* ================= MAP ================= */
+
+.map{
+  width:100%;
+  height:250px;
+  border-radius:15px;
+  margin-top:10px;
+  border:none;
+}
+
+/*=================SOCIAL================= */
+
+footer{
+  text-align:center;
+  padding:15px;
+}
+
+.social img{
+  width:40px;
+  margin:5px;
+  border-radius: 50px;
+}
+.facebook {
+  width:40px;
+  margin:5px;
+  border-radius: 50px;
+}
+
+/* ================= POPUP ================= */
+
+.popup{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  opacity:0;
+  pointer-events:none;
+  transition:0.3s;
+  z-index:999;
+}
+
+.popup.show{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.box{
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  width:90%;
+  max-width:400px;
+}
+
+.box h2{
+  margin-bottom:10px;
+}
+
+.box input,
+.box select{
+  width:100%;
+  padding:10px;
+  margin:5px 0;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+.box button{
+  width:100%;
+  padding:12px;
+  background:red;
+  color:white;
+  border:none;
+  border-radius:25px;
+  font-size:15px;
+}
+
+.close{
+  float:right;
+  cursor:pointer;
+  font-size:18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTENT */
+.container {
+
+   background:white;
+  margin:15px;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* GALLERY PREVIEW */
+.fk-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 400px;
+}
+
+.fk-gallery img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* +COUNT IMAGE */
+.fk-more {
+  position: relative;
+  cursor: pointer;
+}
+
+.fk-more span {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+/* FULLSCREEN */
+.fk-fullscreen {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+}
+
+.fk-fullscreen img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* CLOSE BUTTON */
+.fk-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .fk-gallery img {
+    height: 120px;
+  }
+}
+b {
+  color:red;  
+}
