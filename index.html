@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AK Sound | DJ Service</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Lm.css">
+</head>
+
+<body>
+<header class="main-header">
+  <div class="header-left">
+    <img src="arjun.jpg" class="profile-img" alt="AK Sound Logo">
+
+    <div class="header-text">
+      <h1>A.K. Sound</h1>
+      <p class="director">
+        Director: Arjun Kumar <span>(Professional DJ)</span>
+      </p>
+      <p class="address">
+        📍 Singhpur Sarnath Varanasi (UP)<br>
+        (Arihant Nagar Colony Face 2)
+      </p>
+    </div>
+  </div>
+
+  <button class="book-btn" onclick="openBookingForm()">
+    Book Now
+  </button>
+</header>
+
+<section class="section1">
+<h2>About Us</h2>
+<p>
+<b>A.K. SOUND</b> ek professional DJ service hai.
+Wedding, Birthday aur Party ke liye DJ available hai.
+</p>
+</section>
+  <div class="card"></div>
+
+<section class="section">
+<h2>Services</h2>
+<ul>
+    <li>🎧 Wedding DJ</li>
+    <li>🔊 Sound System</li>
+    <li>🎉 Birthday</li>
+    <li>🎶 Jagran </li>
+    <li>💡 DJ Lights</li>
+    <li>🎊 Barat DJ</li>
+    <li>🎤 Stage Program</li>
+    <li>🎂 Anniversary Party</li>
+    <li>📢 Mic Announcement</li>
+    <li>🎥 Event Video Recording</li>
+</ul>
+</section>
+
+<main class="container">
+  <h2>Product / Event Gallery</h2>
+
+  <!-- GALLERY PREVIEW (SIRF 4 IMAGE) -->
+   <div class="fk-gallery">
+   <img src="shaadi3.jpg" onclick="openGallery(0)">
+   <img src="shaadi4.jpg" onclick="openGallery(1)">
+   <img src="shaadi5.jpg" onclick="openGallery(2)">
+ 
+   <div class="fk-more" onclick="openGallery(3)">
+     <img src="shaadi1.jpg">
+     <span id="totalCount"></span>
+   </div>
+ </div>
+ </main>
+ 
+
+
+
+<section class="section">
+<h2>Contact</h2>
+
+<a href="tel:918112506316" class="btn call">📞 Call</a>
+<a href="https://wa.me/918112506316" class="btn whatsapp">💬 WhatsApp</a>
+
+<iframe class="map"
+src="https://maps.google.com/maps?q=25.420678,82.977197&z=16&output=embed">
+</iframe>
+
+<button onclick="getDirections()" class="btn direction">
+📍 Get Direction
+</button>
+
+</section>
+
+
+<footer>
+
+<p style=font-size:20px; >© 2026 A.K. Sound</p>
+
+<div class="social">
+<a href="https://www.instagram.com/ak_sound90/" target="_blank">
+<img src="instagram.png">
+</a>
+
+<a class="facebook" href="https://facebook.com/Karan Kumar" target="_blank">
+<img src="facebook.png">
+</a>
+</div>
+
+</footer>
+
+
+
+<!-- BOOKING POPUP -->
+<div class="popup" id="bookingPopup">
+<div class="box">
+
+<span onclick="closeBookingForm()" class="close">✕</span>
+
+<h2>Booking Form</h2>
+
+<input id="name" placeholder="Name">
+
+<input id="mobile" placeholder="Mobile Number">
+
+<!-- Event Type -->
+<select id="eventSelect" onchange="setEventType()">
+<option value="">Select Event</option>
+<option>Wedding</option>
+<option>Birthday</option>
+<option>Party</option>
+<option>Jagran</option>
+<option>Other</option>
+</select>
+
+<input id="eventType" placeholder="Or type event">
+
+<input id="address" placeholder="Event Address">
+
+<input type="date" id="time">
+
+<button onclick="confirmBooking()">Confirm Booking</button>
+
+</div>
+</div>
+
+
+
+<div class="popup" id="successPopup">
+<div class="box">
+<h2>Booking Sent ✅</h2>
+</div>
+</div>
+
+<!-- FULLSCREEN GALLERY -->
+    <div class="fk-fullscreen" id="fkFullscreen">
+    <span class="fk-close" onclick="closeGallery()">✕</span>
+    <img id="fkImage">
+  </div>
+   
+
+<script src="Lm.js"></script>
+
+</body>
+</html>
